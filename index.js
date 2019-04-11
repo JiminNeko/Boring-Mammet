@@ -84,33 +84,6 @@ client.on("message", message => {
     console.error(error);
     message.reply("there was an error trying to execute that command!");
   }
-
-  /* if (command === 'ping') {
-		client.commands.get('ping').execute(message, args);
-	} else if (command === 'streamteam') {
-        client.commands.get('streamteam').execute(message,args);
-    } else if (command === 'server') {
-        client.commands.get('server').execute(message,args);
-    } else if (command === 'prune') {
-        client.commands.get('prune').execute(message,args);
-    } else if (command === 'kick') {
-        client.commands.get('kick').execute(message,args);
-    } else if (command === 'ban') {
-        client.commands.get('ban').execute(message,args);
-    } else if (command === 'avatar') {
-        client.commands.get('avatar').execute(message,args);
-    } else if (command === 'twitch') {
-        client.commands.get('twitch').execute(message,args);
-    } else if (command === 'communist') {
-        client.commands.get('communist').execute(message,args);
-    } else if (command === 'gay') {
-        client.commands.get('gay').execute(message,args);
-    } else if (command === 'racist') {
-        client.commands.get('racist').execute(message,args);
-    } else if (command === 'fatcat') {
-        client.commands.get('fatcat').execute(message,args);
-    } */
-  // other commands...
 });
 
 client.login(token);
