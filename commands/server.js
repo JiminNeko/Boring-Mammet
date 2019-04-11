@@ -1,7 +1,8 @@
 const { RichEmbed } = require('discord.js');
 module.exports = {
 	name: 'server',
-	description: 'Displays server information.',
+  description: 'Displays server information.',
+  guildOnly: true,
 	execute(message, args) {
 		const embed = new RichEmbed()
       .setTitle(``)

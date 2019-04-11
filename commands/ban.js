@@ -1,6 +1,7 @@
 module.exports = {
 	name: 'ban',
-	description: 'Tag a member and ban them (but not really).',
+  description: 'Tag a member and ban them (but not really).',
+  guildOnly: true,
 	execute(message) {
 		 //Ban member mentioned
          if (!message.guild) return;
