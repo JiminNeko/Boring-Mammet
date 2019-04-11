@@ -2,6 +2,7 @@ module.exports = {
   name: "prune",
   description: "Prune up to 99 messages.",
   execute(message, args) {
+    if (message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS'])){
     const amount = parseInt(args[0]) + 1;
 
     if (isNaN(amount)) {
@@ -19,4 +20,8 @@ module.exports = {
     message.channel.send("Pruned" + ` ${amount} ` + "messages.");
     message.channel.bulkDelete(1);
   }
+  else {
+    message.reply("You do not have permission to use this command.")
+  }
+}
 };

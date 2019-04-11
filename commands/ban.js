@@ -3,6 +3,7 @@ module.exports = {
   description: "Tag a member and ban them (but not really).",
   guildOnly: true,
   execute(message) {
+    if (message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS'])){
     //Ban member mentioned
     if (!message.guild) return;
 
@@ -41,4 +42,8 @@ module.exports = {
       message.reply("You didn't mention the user to ban!");
     }
   }
+  else {
+    message.reply("You do not have permission to use this command.")
+  }
+}
 };
