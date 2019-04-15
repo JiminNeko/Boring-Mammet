@@ -1,6 +1,6 @@
 module.exports = {
     name: "butttouch",
-    description: "Touch the butt",
+    description: "Touch the butt.",
     guildOnly: true,
     args: true,
     execute(message, args) {
