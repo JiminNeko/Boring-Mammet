@@ -2,7 +2,7 @@
 const { Attachment } = require("discord.js");
 const fs = require("fs");
 module.exports = {
-  name: "Attacked",
+  name: "attacked",
   description: "I feel attacked!",
   execute(message, args) {
     // Get the buffer from the 'file', assuming that the file exists
