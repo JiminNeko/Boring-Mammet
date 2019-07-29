@@ -18,11 +18,12 @@ module.exports = {
       .then(function(search) {
         let action = search.Results;
         return action.map(function(actions) {
+          const Description = actions.Description.replace((/(?:<.?span.*?>)+, ""));
           const embed = new RichEmbed()
             .setAuthor(`${actions.Name}`, ``, `https://xivapi.com`)
             .setDescription(`${actions.Description}`)
             .setThumbnail(`https://xivapi.com${actions.Icon}`)
-            .setFooter("brought to you by xivapi.com");
+            .setFooter("brought to you by[xivapi.com](https://xivapi.com)");
             message.channel.send(embed);
         });
       })
