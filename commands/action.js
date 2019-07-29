@@ -23,11 +23,11 @@ module.exports = {
             .setDescription(`${actions.Description}`)
             .setThumbnail(`${actions.Icon}`)
             .setFooter("brought to you by xivapi.com");
+            message.channel.send(embed);
         });
       })
       .catch(function(error) {
         console.log(error);
       });
-    message.channel.send(embed);
   }
 };
