@@ -21,7 +21,7 @@ module.exports = {
           const embed = new RichEmbed()
             .setAuthor(`${actions.Name}`, ``, `https://xivapi.com`)
             .setDescription(`${actions.Description}`)
-            .setThumbnail(`${actions.Icon}`)
+            .setThumbnail(`https://xivapi.com${actions.Icon}`)
             .setFooter("brought to you by xivapi.com");
             message.channel.send(embed);
         });
