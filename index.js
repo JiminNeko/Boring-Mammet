@@ -86,6 +86,4 @@ client.on("message", message => {
   }
 });
 
-client.user.setActivity('the screams of the damned.', { type: 'LISTENING' });
-
 client.login(process.env.BOT_TOKEN);
