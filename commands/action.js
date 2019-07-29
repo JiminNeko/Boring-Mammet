@@ -20,6 +20,7 @@ module.exports = {
         return action.map(function(actions) {
           const embed = new RichEmbed()
             .setAuthor(`${actions.Name}`, ``, `https://xivapi.com`)
+            .setTitle("Description: ")
             .setDescription(`${actions.Description}`.replace(/(?:<.?span.*?>)+/g, ""))
             .setThumbnail(`https://xivapi.com${actions.Icon}`)
             .setFooter("brought to you by", "https://xivapi.com/i/065000/065066_hq.png", "https://xivapi.com");
