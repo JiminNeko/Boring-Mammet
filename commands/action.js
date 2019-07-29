@@ -4,8 +4,9 @@ module.exports = {
   guildOnly: true,
   args: true,
   execute(message, args) {
+    const fetch = require("node-fetch")
     const xivsearch = "https://xivapi.com/search?string=";
-      fetch(
+    fetch(
         xivsearch +
           args +
           `&string_algo=match&limit=1&indexes=Action,CraftAction&filters=IsPlayerAction=1,IsPvP=0&columns=ID,Name,Icon,ClassJobCategory.Name,Description,ActionCategory,ClassJob.Icon,IsPlayerAction`
