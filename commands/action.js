@@ -15,7 +15,12 @@ module.exports = {
         .then(function(search) {
           let action = search.Results;
           return action.map(function(actions) {
-            message.channel.send(`${actions.Name}`)
+            const embed = new RichEmbed()
+            .setAuthor(`${actions.Name}`, ``, `https://xivapi.com`)
+            .setDescription(`${actions.Description}`)
+            .setThumbnail(`${actions.Icon}`)
+            .setFooter('brought to you by xivapi.com')
+            message.channel.send(embed)
           });
         })
         .catch(function(error) {
