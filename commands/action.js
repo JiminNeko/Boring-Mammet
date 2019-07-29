@@ -21,7 +21,7 @@ module.exports = {
           const Description = actions.Description.replace((/(?:<.?span.*?>)+, ""));
           const embed = new RichEmbed()
             .setAuthor(`${actions.Name}`, ``, `https://xivapi.com`)
-            .setDescription(`${actions.Description}`)
+            .setDescription(Description)
             .setThumbnail(`https://xivapi.com${actions.Icon}`)
             .setFooter("brought to you by[xivapi.com](https://xivapi.com)");
             message.channel.send(embed);
