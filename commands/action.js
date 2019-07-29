@@ -23,7 +23,7 @@ module.exports = {
             .setTitle("Description: ")
             .setDescription(`${actions.Description}`.replace(/(?:<.?span.*?>)+/g, ""))
             .setThumbnail(`https://xivapi.com${actions.Icon}`)
-            .setFooter("brought to you by", "https://xivapi.com/i/065000/065066_hq.png", "https://xivapi.com");
+            .setFooter("brought to you by xivapi", "https://xivapi.com/i/065000/065066_hq.png");
             message.channel.send(embed);
         });
       })
