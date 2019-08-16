@@ -10,5 +10,5 @@ module.exports = {
     const attachment = new Attachment(buffer, "cafe.zip");
     // Send the attachment in the message channel with a content
     message.channel.send(attachment);
-  }}
+  } else message.channel.send("You do not have permission for this command.")}
 };
